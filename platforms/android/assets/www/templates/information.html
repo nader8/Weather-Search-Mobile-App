@@ -1,0 +1,17 @@
+<ion-view title="Information" id="page3" style="background-color:#09110E;" class=" ">
+    <ion-content padding="true" class="has-header">
+        <div class="list list-inset">
+            <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="search" data-ng-model="cityname" placeholder="i.e London">
+            </label>
+            <a data-ng-click="initMap(cityname)" class=" button button-positive  button-block ">Search</a>
+        </div>
+        <div ng-bind-html="myhtml"></div>
+        <div id="map"></div>
+    </ion-content>
+</ion-view>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHbdOMeoSkrxlSXCXxEJ-JoiP7YFtGIjI&callback=initMap">
+</script>
